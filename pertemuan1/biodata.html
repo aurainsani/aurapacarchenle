@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Insani - Biodata</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #2d4059);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #ffd369;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .info-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .info-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .info-item i {
+            font-size: 1.5em;
+            color: #ffd369;
+            margin-right: 15px;
+            width: 30px;
+        }
+
+        .info-content h3 {
+            color: #ffd369;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .info-content p {
+            color: #eeeeee;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 768px) {
+            .info-section {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-card {
+                padding: 25px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+        <div class="header">
+            <h1>Aura Insani Siagian</h1>
+            <p>Informatika - Teknologi dan Ilmu Komputer</p>
+        </div>
+
+        <div class="info-section">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info-content">
+                    <h3>Tempat/Tanggal Lahir</h3>
+                    <p>Medan, 24 September 2005</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <div class="info-content">
+                    <h3>Kontak</h3>
+                    <p>083177336238<br>aurainsani2419@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-home"></i>
+                <div class="info-content">
+                    <h3>Alamat</h3>
+                    <p>Jl. Madio Utomo No.90, Medan Perjuangan, Kota Medan</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="info-content">
+                    <h3>Pendidikan</h3>
+                    <p>Teknologi dan Ilmu Komputer<br>Program Studi Informatika</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-heart"></i>
+                <div class="info-content">
+                    <h3>Hobi</h3>
+                    <p>Membaca Komik/Novel, Menulis, KPop-KDrama, Anime, Musik</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-trophy"></i>
+                <div class="info-content">
+                    <h3>Skill Unik</h3>
+                    <p>Menyelesaikan tiap episode series dalam 1 hari 🏆</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
