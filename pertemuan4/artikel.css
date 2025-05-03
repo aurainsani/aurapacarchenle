@@ -1,0 +1,55 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: orange;
+    transition: background-color 0.3s;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+article {
+    flex: 1;
+    margin-right: 20px;
+}
+
+aside {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
