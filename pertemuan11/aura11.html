@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Search App</title>
+    <link rel="stylesheet" href="tgs11tasya.css">
+</head>
+<body>
+    <h1>Book Search Application</h1>
+    <div class="search-container">
+        <input type="text" id="keyword" placeholder="Enter keyword...">
+        <input type="number" id="year" placeholder="Enter year...">
+        <div class="options">
+            <label><input type="radio" name="searchBy" value="title" checked> Title</label>
+            <label><input type="radio" name="searchBy" value="author"> Author</label>
+            <label><input type="radio" name="searchBy" value="publisher"> Publisher</label>
+            <label><input type="radio" name="searchBy" value="titleYear"> Title and Year</label>
+        </div>
+        <button onclick="searchBooks()">Search</button>
+    </div>
+    <div id="result" class="result-container"></div>
+
+    <script src="tasyaWeb11.js"></script>
+</body>
+</html>
