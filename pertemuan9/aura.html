@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Konversi Bilangan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <h2>Konversi Bilangan</h2>
+    <input type="text" id="inputAngka" placeholder="Masukkan Bilangan Desimal">
+    <button onclick="konversiBilangan()">Konversi</button>
+
+    <script>
+        function konversiBilangan() {
+            const input = document.getElementById('inputAngka').value.trim();
+            const angka = parseInt(input);
+
+            if (isNaN(angka)) {
+                Swal.fire({
+                    title: 'Masukkan Angka yang benar!',
+                    icon: 'error',
+                    confirmButtonColor: '#ff69b4',
+                    confirmButtonText: 'OK'
+                });
+            } else {
+                const biner = angka.toString(2);
+                const oktal = angka.toString(8);
+                const heksa = angka.toString(16).toUpperCase();
+
+                Swal.fire({
+                    title: 'Hasil Konversi',
+                    html: `
+                        <p><strong>Biner :</strong> ${biner}</p>
+                        <p><strong>Oktal :</strong> ${oktal}</p>
+                        <p><strong>Heksadesimal :</strong> ${heksa}</p>
+                    `,
+                    icon: 'success',
+                    confirmButtonColor: '#ff69b4',
+                    confirmButtonText: 'OK'
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>
